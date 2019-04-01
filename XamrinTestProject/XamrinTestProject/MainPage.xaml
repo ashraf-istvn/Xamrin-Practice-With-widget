@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamrinTestProject"
+             x:Class="XamrinTestProject.MainPage">
+
+    <ScrollView>
+        <StackLayout Margin="20,25,30,20">
+        
+            
+
+            <!--  Edit TextView -->
+            <Entry
+                x:Name="userNameEt"
+                Placeholder="user name"
+                TextChanged="OnEntryTextChange"
+                Completed="OnEntryCompleted" />
+            <Entry 
+                x:Name="userPasswordEt"
+                Placeholder="********"
+                IsPassword="True"
+                IsTextPredictionEnabled="False"/>
+            
+            <Label 
+                TextColor="Black"
+                x:Name="userNameLb"
+                Text="user name : "
+                />
+            
+            <!-- Button example-->
+            <Button
+                Text="Submit"
+                Clicked="OnButtonClicked"
+                BackgroundColor="Aqua"
+                TextColor="Blue"
+                BorderColor="Red"
+                BorderWidth="5"
+                CornerRadius="5"
+                />
+
+            <Label
+                TextColor="Gray"
+                FontSize="Medium">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span
+                            TextColor="Aquamarine"
+                            Text="Some example of lable possition &#xA;" TextDecorations="Underline"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+
+            </Label>
+            
+            
+            <!-- All label example -->
+            
+            <Label 
+                Text="Start"
+                BackgroundColor="Gray"
+                HorizontalOptions="Start">
+
+            </Label>
+            <Label 
+                Text="Cneter"
+                BackgroundColor="Gray"
+                HorizontalOptions="Center"/>
+            <Label
+                Text="End"
+                HorizontalOptions="End"
+                BackgroundColor="Gray"/>
+            <Label
+                Text="Cener and Expand"
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Gray"/>
+            <Label
+                Text="End and expand"
+                HorizontalOptions="EndAndExpand"
+                BackgroundColor="Gray"/>
+            <Label
+                Text="Fill and expand"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="Gray"
+                Margin="30"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
+
+    
