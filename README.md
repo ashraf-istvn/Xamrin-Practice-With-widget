@@ -1,4 +1,4 @@
-# Xamrin-Practice-With-widget
+# Xamarin-Practice-With-widget
 Label, Label possition, Spin, Entry and button widget
 
 
